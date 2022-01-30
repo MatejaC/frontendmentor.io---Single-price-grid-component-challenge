@@ -31,7 +31,6 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 a:not([class]) {
@@ -68,16 +67,17 @@ select {
 
 /*colors*/
 
-$cyan: #2ab2af;
-$Bright-Yellow: #c0df34;
-$Grayish-Blue: #98a6bd;
+$cyan: #2ab3b1;
+$cyan2: #4abfbd;
+$Bright-Yellow: #c0df33;
+$Grayish-Blue: #9aa7be;
 $Light-Gray: #e5eff5;
-$background-color:#F2F2F2;
+$background-color: #f2f2f2;
+$white: #ffff;
 
 /*font*/
 
 $Karla: "Karla", sans-serif;
-
 
 html {
   font-size: 16px;
@@ -86,5 +86,59 @@ html {
 body {
   font-family: $Karla;
   background-color: $background-color;
-  min-height:100vh;
+  max-width: 362px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.introduction {
+  background-color: $white;
+  padding-left: 1.5rem;
+  padding-top: 1.75rem;
+}
+
+.introduction__headline {
+  color: $cyan;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.44rem;
+  letter-spacing: -0.016rem;
+  padding-bottom: 1.5rem;
+}
+
+.introduction__money-back-garantee {
+  max-width: 16.6rem;
+  font-weight: bold;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.1875px;
+  color: $Bright-Yellow;
+  padding-bottom: 1rem;
+}
+
+.introduction__acess {
+  max-width: 16.6rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.175px;
+  color: $Grayish-Blue;
+  padding-bottom:2rem;
+}
+
+.subscription {
+  background-color: $cyan;
+  padding-left: 1.5rem;
+}
+
+.about-us {
+  background-color: $cyan2;
+  padding-left: 1.5rem;
+}
+
+.about-us__description{
+padding-left:0;
 }
