@@ -86,18 +86,21 @@ html {
 body {
   font-family: $Karla;
   background-color: $background-color;
-  max-width: 362px;
   display: grid;
-  grid-template-columns: 1fr;
+  margin: 0 auto;
   align-content: center;
   justify-content: center;
-  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.container {
+   box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  border-radius: 5px;
 }
 
 .introduction {
   background-color: $white;
-  padding-left: 1.5rem;
-  padding-top: 1.75rem;
+  padding: 1.75rem 1.5rem 0 1.5rem;
 }
 
 .introduction__headline {
@@ -126,12 +129,72 @@ body {
   line-height: 1.625rem;
   letter-spacing: -0.175px;
   color: $Grayish-Blue;
-  padding-bottom:2rem;
+  padding-bottom: 2rem;
 }
 
 .subscription {
   background-color: $cyan;
   padding-left: 1.5rem;
+  color: $white;
+  padding-bottom: 1.5rem;
+}
+
+.subscription__title {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1, 3125rem;
+  letter-spacing: -0.225px;
+  color: $white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.125rem;
+}
+
+.subscription__price {
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 37px;
+  letter-spacing: -0.4px;
+
+  &::after {
+    display: inline-flex;
+    content: " per month";
+    opacity: 0.5;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    mix-blend-mode: normal;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.69rem;
+  }
+}
+
+.subscription__access {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  padding-top: 0.25rem;
+  padding-bottom: 1.625rem;
+}
+
+.subscription__sign-up {
+  display: inline-block;
+  background: $Bright-Yellow;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.2px;
+  color: $white;
+  padding: 0.9375rem 6.375rem 0.875rem;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .about-us {
