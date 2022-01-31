@@ -91,12 +91,16 @@ body {
 .container {
   -webkit-box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
           box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
-  border-radius: 5px;
 }
 
 .introduction {
   background-color: #ffff;
   padding: 1.75rem 1.5rem 0 1.5rem;
+  border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -ms-border-radius: 5px 5px 0px 0px;
+  -o-border-radius: 5px 5px 0px 0px;
 }
 
 .introduction__headline {
@@ -207,6 +211,11 @@ body {
   background-color: #4abfbd;
   padding-left: 1.5rem;
   color: #ffff;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -ms-border-radius: 0px 0px 5px 5px;
+  -o-border-radius: 0px 0px 5px 5px;
 }
 
 .about-us__title {
@@ -227,5 +236,87 @@ body {
   letter-spacing: -0.175px;
   opacity: 0.75;
   padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 635px;
+    border-radius: 8px 8px 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "introduction introduction" "subscription about-us";
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+  }
+  .introduction {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: introduction;
+  }
+  .subscription {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: subscription;
+  }
+  .about-us {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: about-us;
+  }
+  .introduction__money-back-garantee,
+  .introduction__acess {
+    max-width: none;
+  }
+  .introduction,
+  .subscription,
+  .about-us {
+    padding-left: 2.5rem;
+  }
+  .introduction {
+    padding-right: 0;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .introduction__headline {
+    font-size: 1, 5rem;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    padding-top: 2.5rem;
+    padding-bottom: 1, 5rem;
+  }
+  .introduction__money-back-garantee {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+    padding-bottom: 0.6875rem;
+  }
+  .introduction__acess {
+    min-width: 555px;
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .subscription {
+    padding-right: 2.5rem;
+  }
+  .subscription__title,
+  .about-us__title {
+    padding-top: 2.5rem;
+  }
+  .subscription__sign-up {
+    padding: 0.9375rem 5.5625rem 0.875rem;
+  }
+  .about-us__description {
+    padding-bottom: 2.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
