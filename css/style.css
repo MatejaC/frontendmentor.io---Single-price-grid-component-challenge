@@ -206,10 +206,26 @@ body {
 .about-us {
   background-color: #4abfbd;
   padding-left: 1.5rem;
+  color: #ffff;
+}
+
+.about-us__title {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+  padding-top: 1.5em;
+  padding-bottom: 1.125rem;
 }
 
 .about-us__description {
   padding-left: 0;
   margin: 0;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  letter-spacing: -0.175px;
+  opacity: 0.75;
+  padding-bottom: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
