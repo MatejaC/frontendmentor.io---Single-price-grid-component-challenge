@@ -318,5 +318,12 @@ body {
   .about-us__description {
     padding-bottom: 2.5rem;
   }
+  .about-us {
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -ms-border-radius: 0px 0px 0px 0px;
+    -o-border-radius: 0px 0px 0px 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

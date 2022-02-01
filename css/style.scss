@@ -98,13 +98,13 @@ body {
 }
 
 .introduction {
-   background-color: $white;
-   padding: 1.75rem 1.5rem 0 1.5rem;
-   border-radius: 5px 5px 0px 0px;
-   -webkit-border-radius: 5px 5px 0px 0px;
-   -moz-border-radius: 5px 5px 0px 0px;
-   -ms-border-radius: 5px 5px 0px 0px;
-   -o-border-radius: 5px 5px 0px 0px;
+  background-color: $white;
+  padding: 1.75rem 1.5rem 0 1.5rem;
+  border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -ms-border-radius: 5px 5px 0px 0px;
+  -o-border-radius: 5px 5px 0px 0px;
 }
 
 .introduction__headline {
@@ -202,14 +202,14 @@ body {
 }
 
 .about-us {
-   background-color: $cyan2;
-   padding-left: 1.5rem;
-   color: $white;
-   border-radius:  0px 0px 5px 5px;
-   -webkit-border-radius:  0px 0px 5px 5px;
-   -moz-border-radius:  0px 0px 5px 5px;
-   -ms-border-radius:  0px 0px 5px 5px;
-   -o-border-radius:  0px 0px 5px 5px;
+  background-color: $cyan2;
+  padding-left: 1.5rem;
+  color: $white;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -ms-border-radius: 0px 0px 5px 5px;
+  -o-border-radius: 0px 0px 5px 5px;
 }
 
 .about-us__title {
@@ -244,7 +244,7 @@ body {
     -moz-border-radius: 8px 8px 0 0;
     -ms-border-radius: 8px 8px 0 0;
     -o-border-radius: 8px 8px 0 0;
-}
+  }
 
   .introduction {
     grid-area: introduction;
@@ -307,10 +307,20 @@ body {
   .about-us__title {
     padding-top: 2.5rem;
   }
+
   .subscription__sign-up {
     padding: 0.9375rem 5.5625rem 0.875rem;
   }
+
   .about-us__description {
     padding-bottom: 2.5rem;
+  }
+
+  .about-us {
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -ms-border-radius: 0px 0px 0px 0px;
+    -o-border-radius: 0px 0px 0px 0px;
   }
 }
